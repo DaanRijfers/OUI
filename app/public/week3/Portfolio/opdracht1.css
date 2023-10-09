@@ -1,0 +1,198 @@
+/* Reset some default styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  /* Set up a primary color variable */
+  :root {
+    --primary-color: #512B81;
+    --main-grey-white: #f9f9f9;
+  }
+  
+  /* Global styles for the body */
+  body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f5f5f5;
+    color: #333;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+  }
+  
+  html{
+    scroll-behavior: smooth;
+  }
+  
+  /* Header styles */
+  header {
+    background-color: var(--primary-color);
+    color: #fff;
+    padding: 20px 0;
+  }
+  
+  .header-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+  }
+  
+  .header-logo a {
+    font-size: 1.5rem;
+    font-weight: bold;
+    text-decoration: none;
+    color: #fff;
+  }
+  
+  .header-container ul {
+    list-style: none;
+    display: flex;
+  }
+  
+  .header-container ul li {
+    margin-right: 20px;
+  }
+  
+  .header-container a {
+    text-decoration: none;
+    color: #fff;
+    font-weight: bold;
+    transition: color 0.3s;
+  }
+  
+  .header-container a:hover {
+    color: black;
+  }
+  
+  /* Home section styles */
+  .home {
+    background-color: #fff;
+    padding: 60px 0;
+    text-align: center;
+    margin: 20px;
+  }
+  
+  .home-content {
+    max-width: 800px;
+    margin: 0 auto;
+  }
+  
+  /* About section styles */
+  .about {
+    background-color: #f9f9f9;
+    padding: 60px 0;
+    margin: 20px;
+  }
+  
+  .about-title h3 {
+    font-size: 2rem;
+    color: var(--primary-color);
+  }
+  
+  .about-me-text p {
+    font-size: 1.2rem;
+    margin-bottom: 20px;
+  }
+  
+  /* Projects section styles */
+  .projects {
+    background-color: var(--main-grey-white);
+    padding: 15px 0;
+    margin: 20px;
+  }
+  
+  .projects-content {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .projects-content h3 {
+    font-size: 2.1rem;
+    color: var(--primary-color);
+    margin-bottom: 6rem;
+  }
+  
+  .projects-content p {
+    color: #333;
+    font-size: 1.3rem;
+    font-weight: 700;
+    margin-bottom: 1rem;
+  }
+  
+  .projects-grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+  }
+  
+  .grid-item {
+    display: block;
+    text-align: center;
+    place-self: center;
+    object-fit: fill;
+    overflow: hidden;
+    flex-basis: calc(33.333% - 2rem);
+    margin-bottom: 1rem; /* Hier hebben we de margin-bottom aangepast */
+    border: 1px solid var(--primary-color);
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  .grid-item img {
+    font-size: 1.2rem;
+    max-width: 100%;
+  }
+  
+  .project-text a {
+    font-weight: bold;
+  }
+  
+  .project-text a:hover {
+    background-color: var(--primary-color);
+    color: #fff;
+  }
+  
+  #opdracht {
+      background-color: grey;
+      padding: 25px 50px;
+  }
+  
+  .opdracht-content {
+      display: flex;
+      justify-content: center;
+  }
+  
+  .opdracht-content h1 {
+      color: var(--main-white);
+  }
+  #footer {
+      background-color: var(--main-grey-white);
+      padding: 25px 50px;
+      box-shadow: 0 0 10px rgba(0,0,0,.09);
+  }
+  
+  .footer-container {
+      left: 0;
+      bottom: 0;
+  }
+  .footer-content {
+      display: flex;
+      justify-content: center;
+  }
+  .footer-text h3 {
+      font-size: 1rem;
+      color: var(--main-text);
+  }
+  
+  @media only screen and (max-width: 600px) {
+      .container {
+          padding: 0 2rem;
+      }
+  }
+  
